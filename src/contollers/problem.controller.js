@@ -1,3 +1,4 @@
+const { StatusCodes } = require('http-status-codes');
 
 function checkProblemController(req, res) {
     console.log("Hello")
@@ -13,8 +14,9 @@ function getProblem(req, res) {
 }
 
 function getProblems(req, res) {
-    console.log("Hello getProblem")
-    return res.json({ message: 'Hello' })
+    return res.status(StatusCodes.NOT_IMPLEMENTED).json({
+        message: 'Not Implemented'
+    })
 }
 
 function deleteProblem(req, res) {

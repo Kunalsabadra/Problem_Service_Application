@@ -7,5 +7,5 @@ console.log(process.env.PORT);
 module.exports = {
 
     // PORT: process.env.PORT
-    PORT: 3000
+    PORT: 5000
 }
